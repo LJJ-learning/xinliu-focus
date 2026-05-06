@@ -54,10 +54,11 @@
             padding-right: max(20px, env(safe-area-inset-right) + 8px);
             line-height: 1.6;
             overflow-x: hidden;
+            overflow-y: auto;
             position: relative;
             -webkit-tap-highlight-color: transparent;
-            touch-action: manipulation;
-            overscroll-behavior-y: none;
+            touch-action: pan-x pan-y;
+            -webkit-overflow-scrolling: touch;
         }
 
         /* Ink wash background */
@@ -3027,6 +3028,8 @@
             width: 100%;
             min-height: 100%;
             overflow-x: hidden;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
         }
 
         body {
@@ -5304,7 +5307,7 @@
         document.addEventListener('DOMContentLoaded', requestNotificationPermission);
 
         // ===== Swipe to switch views =====
-        const VIEW_ORDER = ['focus', 'notes', 'tasks', 'schedule', 'habits', 'reward', 'settings'];
+        const VIEW_ORDER = ['focus', 'notes', 'task', 'schedule', 'habit', 'reward', 'settings'];
         let touchStartX = 0, touchStartY = 0, touchStartTime = 0;
         document.addEventListener('touchstart', e => {
             touchStartX = e.changedTouches[0].screenX;
