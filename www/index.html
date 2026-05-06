@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
@@ -4088,7 +4088,7 @@
         <button class="trigger-toast-btn" onclick="dismissTriggerToast()">知道了</button>
     </div>
 
-    <footer style="text-align:center;padding:40px 20px 28px;">
+    <footer style="text-align:center;padding:40px 20px 80px;">
         <p id="mottoDisplay" style="font-family:'Noto Serif SC',serif;font-size:0.9rem;color:var(--text-secondary);letter-spacing:2px;line-height:1.8;opacity:0.7;transition:opacity 0.6s ease;">
         </p>
     </footer>
@@ -5307,7 +5307,7 @@
         document.addEventListener('DOMContentLoaded', requestNotificationPermission);
 
         // ===== Swipe to switch views =====
-        const VIEW_ORDER = ['focus', 'notes', 'task', 'schedule', 'habit', 'reward', 'settings'];
+        const VIEW_ORDER = ['focus', 'notes', 'tasks', 'schedule', 'habits', 'reward', 'settings'];
         let touchStartX = 0, touchStartY = 0, touchStartTime = 0;
         document.addEventListener('touchstart', e => {
             touchStartX = e.changedTouches[0].screenX;
