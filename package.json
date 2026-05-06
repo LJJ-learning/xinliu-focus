@@ -1,0 +1,14 @@
+{
+  "name": "xinliu-focus",
+  "version": "1.0.0",
+  "description": "心流 - 专注计时与人生规划",
+  "scripts": {
+    "build": "npx cap copy && npx cap sync",
+    "sync": "npx cap sync android"
+  },
+  "dependencies": {
+    "@capacitor/core": "^6.0.0",
+    "@capacitor/android": "^6.0.0",
+    "@capacitor/cli": "^6.0.0"
+  }
+}

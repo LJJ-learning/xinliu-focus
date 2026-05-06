@@ -1,0 +1,19 @@
+{
+  "appId": "com.xinliu.focus",
+  "appName": "心流",
+  "webDir": "www",
+  "android": {
+    "buildOptions": {
+      "keystorePath": "",
+      "keystoreAlias": "",
+      "keystorePassword": "",
+      "keystoreKeyPassword": ""
+    }
+  },
+  "plugins": {
+    "LocalNotifications": {
+      "smallIcon": "ic_stat_icon_config_sample",
+      "iconColor": "#1ba784"
+    }
+  }
+}
